@@ -1,0 +1,120 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1f2632;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 2rem;
+}
+
+.card {
+  background-color: #323a49;
+  width: 100%;
+  max-width: 33.8rem;
+  height: 100%;
+  max-height: 19rem;
+  padding: 3.12rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.2rem;
+  position: relative;
+}
+
+.card .advice_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Manrope", sans-serif;
+}
+
+.card .advice_content .divider_desktop {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.card .advice_content h2 {
+  text-transform: uppercase;
+  color: #52ffa8;
+  letter-spacing: 0.4rem;
+  font-size: 15px;
+}
+
+.card .advice_content .advice_text {
+  margin: 60px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card .advice_content .advice_text h1 {
+  color: #cee3e9;
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+}
+
+.card .advice_content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #52ffa8;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 92%;
+}
+
+.card .advice_content .button:hover {
+  -webkit-box-shadow: 0px 0px 17px 0.5px #52ffa8;
+          box-shadow: 0px 0px 17px 0.5px #52ffa8;
+}
+
+.card .advice_content .button:active {
+  background-color: #14cc70;
+}
+/*# sourceMappingURL=style.css.map */

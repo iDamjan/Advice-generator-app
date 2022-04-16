@@ -1,0 +1,93 @@
+// Variables
+
+$background-color: hsl(218, 23%, 16%);
+$card-color: hsl(217, 19%, 24%);
+$grayish-blue: hsl(217, 19%, 38%);
+$neon-green: hsl(150, 100%, 66%);
+$light-cyan: hsl(193, 38%, 86%);
+
+$font-main: "Manrope", sans-serif;
+
+//Variables
+
+//Functions
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Functions
+
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  background-color: $background-color;
+  @include flexCenter();
+  height: 100vh;
+  margin: 2rem;
+}
+
+//Main Content
+
+.card {
+  background-color: $card-color;
+  width: 100%;
+  max-width: 33.8rem;
+  height: 100%;
+  max-height: 19rem;
+  padding: 3.12rem 2.5rem;
+  @include flexCenter();
+  border-radius: 1.2rem;
+  position: relative;
+
+  .advice_content {
+    @include flexCenter();
+    flex-direction: column;
+    font-family: $font-main;
+
+    .divider_desktop {
+     max-width: 100%;
+      @include flexCenter();
+      vertical-align: middle;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      color: $neon-green;
+      letter-spacing: 0.4rem;
+      font-size: 15px;
+      
+    }
+    .advice_text {
+        margin: 60px 0;
+        width: 100%;
+        max-width: 400px;
+      h1 {
+        color: $light-cyan;
+        font-size: 28px;
+        text-align: center;
+        margin: 0
+      }
+    }
+    .button{
+        @include flexCenter();
+        background-color: $neon-green;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 92%;
+    }
+    .button:hover{
+        box-shadow: 0px 0px 17px 0.5px $neon-green;
+    }
+    .button:active{
+        background-color: hsl(150, 82%, 44%);
+    }
+  }
+}
