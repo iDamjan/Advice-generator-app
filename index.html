@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Frontend Mentor | Advice generator app</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -25,23 +26,21 @@
       <div class="advice_content">
         <h2 id="advice_number">Advice #0</h2>
         <div class="advice_text">
-        <h1 >"text advice here dadada dad141345141341431
-          341414314134141414134"</h1>
-      </div>
-        <svg
-          class="divider_desktop"
-          width="444"
-          height="16"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g fill="none" fill-rule="evenodd">
-            <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
-            <g transform="translate(212)" fill="#CEE3E9">
-              <rect width="6" height="16" rx="3" />
-              <rect x="14" width="6" height="16" rx="3" />
+          <h1 id ="advice_content">
+            "Click to generate advice, and make your day better"
+          </h1>
+        </div>
+        <div class="divider_desktop">
+          <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
+              <g transform="translate(212)" fill="#CEE3E9">
+                <rect width="6" height="16" rx="3" />
+                <rect x="14" width="6" height="16" rx="3" />
+              </g>
             </g>
-          </g>
-        </svg>
+          </svg>
+        </div>
         <div class="button">
           <svg
             id="button"
@@ -56,7 +55,6 @@
           </svg>
         </div>
       </div>
-      
     </section>
 
     <!-- <div class="attribution">
@@ -64,4 +62,6 @@
     Coded by <a href="#">Damjan</a>.
   </div> -->
   </body>
+
+  <script src="app.js"></script>
 </html>
